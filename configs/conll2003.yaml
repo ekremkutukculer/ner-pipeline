@@ -1,0 +1,25 @@
+data:
+  dataset_name: conll2003
+  glove_path: data/glove/glove.6B.300d.txt
+  glove_dim: 300
+  max_vocab_size: 50000
+
+model:
+  char_embedding_dim: 50
+  char_conv_filters: 50
+  char_conv_kernel: 3
+  hidden_size: 256
+  num_lstm_layers: 1
+  dropout: 0.5
+
+training:
+  optimizer: adam
+  learning_rate: 0.001
+  gradient_clip: 5.0
+  batch_size: 64
+  max_epochs: 50
+  early_stopping_patience: 5
+  checkpoint_dir: checkpoints/conll2003
+
+logging:
+  tensorboard_dir: runs/conll2003

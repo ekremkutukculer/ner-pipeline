@@ -1,0 +1,6 @@
+data/glove/
+checkpoints/
+runs/
+__pycache__/
+*.pyc
+.pytest_cache/
