@@ -4,6 +4,12 @@ A production-ready Named Entity Recognition system built from scratch with PyTor
 
 No pretrained transformers — every layer (Char CNN, BiLSTM, CRF) is implemented and trained from the ground up.
 
+## Demo
+
+![NER Pipeline Demo](docs/demo_screenshot_2.png)
+
+![NER Pipeline Interface](docs/demo_screenshot_1.png)
+
 ## Architecture
 
 ```
