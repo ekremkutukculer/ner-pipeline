@@ -66,7 +66,6 @@ demo = gr.Interface(
     title="NER Pipeline — Named Entity Recognition",
     description="BiLSTM-CRF model trained on CoNLL-2003. Recognizes Person, Organization, Location, and Miscellaneous entities.",
     examples=examples,
-    allow_flagging="never",
 )
 
 if __name__ == "__main__":
