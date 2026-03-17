@@ -33,7 +33,7 @@ async def lifespan(app: FastAPI):
             num_layers=config["model"]["num_lstm_layers"],
             dropout=0.0,
         )
-        checkpoint = torch.load(checkpoint_path, map_location="cpu")
+        checkpoint = torch.load(checkpoint_path, map_location="cpu", weights_only=False)
         model.load_state_dict(checkpoint["model_state_dict"])
         from src.inference.predictor import NERPredictor
         predictor = NERPredictor(

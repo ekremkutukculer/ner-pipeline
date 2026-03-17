@@ -48,7 +48,7 @@ class Trainer:
                 self.epochs_without_improvement = 0
                 best_metrics = val_metrics
                 self._save_checkpoint(epoch)
-                print(f"  ↑ New best F1: {self.best_f1:.4f}")
+                print(f"  ^ New best F1: {self.best_f1:.4f}")
             else:
                 self.epochs_without_improvement += 1
                 if self.epochs_without_improvement >= self.patience:

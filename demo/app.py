@@ -40,7 +40,7 @@ def load_predictor():
         hidden_size=config["model"]["hidden_size"],
         num_layers=config["model"]["num_lstm_layers"], dropout=0.0,
     )
-    checkpoint = torch.load(checkpoint_path, map_location="cpu")
+    checkpoint = torch.load(checkpoint_path, map_location="cpu", weights_only=False)
     model.load_state_dict(checkpoint["model_state_dict"])
     return NERPredictor(model, vocabs["word_vocab"], vocabs["label_vocab"], vocabs["char_vocab"])
 
