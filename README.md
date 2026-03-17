@@ -34,7 +34,7 @@ Trained on CoNLL-2003 (14,041 sentences), evaluated on the validation set:
 ### Installation
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/ner-pipeline.git
+git clone https://github.com/ekremkutukculer/ner-pipeline.git
 cd ner-pipeline
 pip install -r requirements.txt
 python -m spacy download en_core_web_sm
